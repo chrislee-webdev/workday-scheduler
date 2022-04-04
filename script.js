@@ -4,7 +4,3 @@ let momentDate = moment().format('MMM Do yyyy');
 let currentDay = document.getElementById("currentDay");
 
 currentDay.innerHTML = momentDate;
-
-$(".activity").sortable({
-
-})
