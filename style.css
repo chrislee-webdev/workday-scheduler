@@ -23,11 +23,16 @@ textarea{
 
 .description{
   white-space: pre-wrap;
+  text-align: center;
+  padding-top: 15px;
+  border: none;
+  border-radius: 15px;
 }
 
 .time-block{
-  text-align: center;
+  text-align: right;
   border-radius: 15px;
+  padding-top: 15px;
 }
 
 .row {
@@ -76,4 +81,8 @@ textarea{
 #currentDay {
   padding-top: 20px;
   font-size: xx-large;
+}
+
+.container:last-child{
+  margin-bottom: 25px;
 }
