@@ -85,3 +85,6 @@ if (currentHour > 17) {
     $('#17').addClass("present")
 }
 //save button
+$('.saveBtn').addEventListener("click", function(){
+    
+})
