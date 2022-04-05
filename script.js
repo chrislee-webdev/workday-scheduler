@@ -4,5 +4,6 @@ let currentDay = document.getElementById("currentDay");
 // current date display on page
 currentDay.innerHTML = momentDate;
 //current time
-var currentTime = moment()
+var currentHour = moment().hours();
 
+console.log(currentHour);
