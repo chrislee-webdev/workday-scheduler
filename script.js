@@ -84,22 +84,7 @@ if (currentHour > 17) {
 } else if (currentHour == 17) {
     $('#17').addClass("present")
 }
-//save to localStorage
-// function saveSchedule() {
 
-//     var scheduleDetail = document.getElementById("description").value;
-//     localStorage.setItem("scheduleDetail", scheduleDetail);
-// }
-
-// function loadSchedule() {
-//     var scheduleDetail = localStorage.getItem("scheduleDetail");
-//     document.getElementById("description").innerText = scheduleDetail;
-// }
-
-$('.saveBtn').addEventListener('click', function(event){
-    event.preventDefault();
-    var scheduleDetail = document.getElementById("description").value;
-    localStorage.setItem("scheduleDetail", scheduleDetail);
-});
-
-$('.description').val(localStorage.getItem("description"));
+$('.saveBtn').addEventListener('click', function(){
+    
+})
