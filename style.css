@@ -22,6 +22,7 @@ textarea{
 }
 
 .description{
+  background-color: beige;
   white-space: pre-wrap;
   text-align: center;
   padding-top: 15px;
