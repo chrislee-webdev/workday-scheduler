@@ -9,9 +9,13 @@ var currentHour = moment().hours();
 var scheduleTime = [9, 10, 11, 12, 13, 14, 15, 16, 17]
 // variable to hold row as a variable
 var row = document.getElementsByClassName("row");
+//variable to hold button element
+var saveBtn = document.getElementById("saveBtn");
+//variable to hold time-block
+var timeBlock = document.getElementsByClassName("time-block");
 
-console.log(row);
 console.log(currentHour);
+
 //9AM
 if (currentHour > 9) {
     $('#9').addClass("past")
@@ -72,19 +76,20 @@ if (currentHour > 15) {
 if (currentHour > 16) {
     $('#16').addClass("past")
 } else if (currentHour < 16){
-    $('$16').addClass("future")
+    $('#$16').addClass("future")
 } else if (currentHour == 16) {
-    $('16').addClass("present")
+    $('#16').addClass("present")
 }
 //5PM
 if (currentHour > 17) {
     $('#17').addClass("past")
-} else if (currentHour > 17){
-    $('$17').addClass("future")
+} else if (currentHour < 17){
+    $('#17').addClass("future")
 } else if (currentHour == 17) {
     $('#17').addClass("present")
 }
 
-$('.saveBtn').addEventListener('click', function(){
-    
+saveBtn.addEventListener("click", function(){
+    var textValue = document.getElementById("description").value;
+    localStorage.setItem("key", textValue);
 })
