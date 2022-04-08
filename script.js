@@ -12,13 +12,13 @@ var row = document.getElementsByClassName("row");
 //variables to hold button element
 var saveBtn = document.getElementById("saveBtn");
 var saveBtn10 = document.getElementById("saveBtn-10")
-var saveBtn10 = document.getElementById("saveBtn-11")
-var saveBtn10 = document.getElementById("saveBtn-12")
-var saveBtn10 = document.getElementById("saveBtn-13")
-var saveBtn10 = document.getElementById("saveBtn-14")
-var saveBtn10 = document.getElementById("saveBtn-15")
-var saveBtn10 = document.getElementById("saveBtn-16")
-var saveBtn10 = document.getElementById("saveBtn-17")
+var saveBtn11 = document.getElementById("saveBtn-11")
+var saveBtn12 = document.getElementById("saveBtn-12")
+var saveBtn13 = document.getElementById("saveBtn-13")
+var saveBtn14 = document.getElementById("saveBtn-14")
+var saveBtn15 = document.getElementById("saveBtn-15")
+var saveBtn16 = document.getElementById("saveBtn-16")
+var saveBtn17 = document.getElementById("saveBtn-17")
 
 console.log(currentHour);
 
@@ -96,10 +96,10 @@ if (currentHour > 17) {
 }
 
 //Hour 9 function
-$('#saveBtn').click(function(){
-    var textValue = document.getElementById("description").value;
+$('#saveBtn-9').click(function(){
+    var textValue = document.getElementById("description-9").value;
     //set local storge
-    localStorage.setItem("key", textValue)
+    localStorage.setItem("key9", textValue)
 })
 //Hour 10 function
 $('#saveBtn-10').click(function(){
@@ -152,7 +152,7 @@ $('#saveBtn-17').click(function(){
 
 
     //get local storage
-    document.getElementById("description").innerHTML = localStorage.getItem("key");
+    document.getElementById("description-9").innerHTML = localStorage.getItem("key9");
     document.getElementById("description-10").innerHTML = localStorage.getItem("key10");
     document.getElementById("description-11").innerHTML = localStorage.getItem("key11");
     document.getElementById("description-12").innerHTML = localStorage.getItem("key12");
@@ -161,3 +161,16 @@ $('#saveBtn-17').click(function(){
     document.getElementById("description-15").innerHTML = localStorage.getItem("key15");
     document.getElementById("description-16").innerHTML = localStorage.getItem("key16");
     document.getElementById("description-17").innerHTML = localStorage.getItem("key17");
+
+$('#clear').click(function(){
+    localStorage.clear();
+    document.getElementById("description-9").innerHTML = "";
+    document.getElementById("description-10").innerHTML = "";
+    document.getElementById("description-11").innerHTML = "";
+    document.getElementById("description-12").innerHTML = "";
+    document.getElementById("description-13").innerHTML = "";
+    document.getElementById("description-14").innerHTML = "";
+    document.getElementById("description-15").innerHTML = "";
+    document.getElementById("description-16").innerHTML = "";
+    document.getElementById("description-17").innerHTML = "";
+})
