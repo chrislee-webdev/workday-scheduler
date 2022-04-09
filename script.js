@@ -49,7 +49,7 @@ if (currentHour > 11) {
 //12PM
 if (currentHour > 12) {
     $('#12').addClass("past")
-} else if (currentHour > 12){
+} else if (currentHour < 12){
     $('#12').addClass("future")
 } else if (currentHour == 12) {
     $('#12').addClass("present")
@@ -82,7 +82,7 @@ if (currentHour > 15) {
 if (currentHour > 16) {
     $('#16').addClass("past")
 } else if (currentHour < 16){
-    $('#$16').addClass("future")
+    $('#16').addClass("future")
 } else if (currentHour == 16) {
     $('#16').addClass("present")
 }
