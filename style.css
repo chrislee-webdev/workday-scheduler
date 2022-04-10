@@ -88,3 +88,8 @@ textarea{
 .container:last-child{
   margin-bottom: 25px;
 }
+
+#clear {
+  border-radius: 15px;
+  padding: 20px;
+}
