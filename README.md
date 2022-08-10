@@ -1,6 +1,6 @@
 # workday-scheduler
 
-This project rewuired the use of third-party APIs to create a workday scheduler.
+This project required the use of third-party APIs to create a workday scheduler.
 
 This user is presented time blocks of a typical workday from 9AM to 5PM. Within each time block, the user should be able to enter/schedule an event. Teh user can then click on the save icon to save the event to localStorage after which, on a page reload, the event will still be shown and not deleted.
 
