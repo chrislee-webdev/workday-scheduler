@@ -2,7 +2,7 @@
 
 This project required the use of third-party APIs to create a workday scheduler.
 
-This user is presented time blocks of a typical workday from 9AM to 5PM. Within each time block, the user should be able to enter/schedule an event. Teh user can then click on the save icon to save the event to localStorage after which, on a page reload, the event will still be shown and not deleted.
+This user is presented time blocks of a typical workday from 9AM to 5PM. Within each time block, the user should be able to enter/schedule an event. The user can then click on the save icon to save the event to localStorage after which, on a page reload, the event will still be shown and not deleted.
 
 In addition, with the use of Moment.js, the time block are color coded. Gray for hours that have past, red for the current hour, and green for future hours. The colors will change arrodingly with the change in hours using Moment.js
 
